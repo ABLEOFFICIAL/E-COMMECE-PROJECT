@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilities.css">
+    <title>My first E-commerce webpage</title>
+</head>
+<body>
+    <!-- header start -->
+    <header id="header" class="hidden">
+        <div class="ch1">
+            <div class="container lang-select flex pt1 pb1">
+                <p class="intro-msg">Welcome to FURNS...</p>
+                <div class="lang-select-r flex">
+                    <p class="lang pr2">English <i class="fa-solid fa-caret-down"></i></p>
+                    <p class="currency">USD <i class="fa-solid fa-caret-down"></i></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="ch2">
+            <div class="container main-header flex pt2 pb2">
+                <div class="side-bar"><i class="fa-solid fa-bars"></i></div>
+                <div class="main-header-l">
+                    <img src="/images/logo.png" class="logo">
+                </div>
+                <div class="main-header-r">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-gear pl1 ml1"></i>
+                    <i class="fa-regular fa-user ml3 pl2"></i>
+                    <i class="fa-solid fa-cart-shopping ml3 pl2"></i><div class="cart-no">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="ch3">
+            <div class="container2 nav-bar pt2 pb2" id="nav-bar">
+                <ul class="nav-btn flex">
+                    <li class="nav-links"><a href="index.html">Home</a></li>
+                    <li class="nav-links"><a href="#">About</a></li>
+                    <li class="nav-links"><a href="#" id="home-furn">Home Furniture <i class="fa-solid fa-caret-down" id="arrow-down"></i></a></li>
+                    <li class="nav-links"><a href="#" id="office-furn">Office Furniture <i class="fa-solid fa-caret-down" id="arrow-down"></i></a></li>
+                    <li class="nav-links"><a href="#" id="hospital-furn">Hospital Furniture <i class="fa-solid fa-caret-down" id="arrow-down"></i></a></li>
+                    <li class="nav-links"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- section1 start -->
+    <section id="section-1" class="hidden">
+        <div class="cs1">
+            <div class="container flex pt7 pb7">
+                <div class="s1l">
+                    <p class="s1txt-head pt2 pb2">New Products</p>
+                    <h1 class="s1-title pb3">Flexible Chair</h1>
+                    <p class="s1-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quasi ea aliquid quaerat repellendus odio nihil eveniet eos ipsa neque.</p>
+                    <a href="#" class="s1-link">Shop Now</a>
+                    <span class="arrow-right"><i class="fa-solid fa-angle-right"></i></span>
+                </div>
+                <div class="s1r">
+                    <img src="/images/slider-1.png" class="s1-image">
+                </div>
+            </div>
+            <div class="container flex pt7 pb7 second-slide">
+                <div class="s1l">
+                    <p class="s1txt-head pt2 pb2">Best Seller</p>
+                    <h1 class="s1-title pb3">Creative Sofar</h1>
+                    <p class="s1-body">Torem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quasi ea aliquid quaerat repellendus odio nihil eveniet eos ipsa neque.</p>
+                    <a href="#" class="s1-link">Shop Now</a>
+                </div>
+                <div class="s1r">
+                    <img src="/images/slider-2.png" class="s1-image">
+                </div>
+            </div>
+            <div></div><div></div>
+        </div>
+    </section>
+    <!-- section1 end -->
+
+    <!-- section2 start -->
+    <section id="section-2" class="hidden">
+        <div class="container flex pt7 pb7">
+            <div class="d1">
+                <img src="/images/slide-3.jpg"class="d1-img">
+                <p class="d1-txt">Office Chair</p>
+            </div>
+            <div class="d2">
+                <img src="/images/slide-4.jpg"class="d1-img">
+                <p class="d1-txt">BedRoom</p>
+            </div>
+            <div class="d3">
+                <img src="/images/slide-5.jpg"class="d1-img">
+                <p class="d1-txt">Living</p>
+            </div>
+            <div class="d4">
+                <img src="/images/slide-6.jpg"class="d1-img">
+                <p class="d1-txt">Dinning</p>
+            </div>
+            <div class="d5">
+                <img src="/images/slide-7.jpg"class="d5-img">
+                <p class="d1-txt">Lounge</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- section2 end -->
+
+    <!-- section3 start -->
+    <section id="section-3" class="hidden">
+        <div class="container mb7">
+            <h3 class="s3-header mb4">Our Products</h3>
+            <p class="s3-txt mb3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore optio quas corrupti, quaerat omnis.</p>
+            <div class="s3-links pt3 pb3">
+                <a href="#" class="pl">New Arrival</a>
+                <a href="#" class="pl">Featured</a>
+                <a href="#" class="pl">On sale</a>
+                <a href="#" class="pl">Trending</a>
+            </div>
+            <div class="cart-list grid">
+                <div class="cart">
+                    <img src="/images/slide-8.jpg" class="cart-img">
+                    <img src="/images/slide-8.jpg" class="cart-img2">
+                    <a class="cart-txt">Living Room Set</a>
+                    <p class="cart-price"><span class="discount">$1520</span>$1500</p>
+                    <div class="like"><i class="fa-regular fa-heart"></i></div>
+                    <div class="view"><i class="fa-solid fa-expand"></i></div>
+                    <div class="compare"><i class="fa-solid fa-code-compare"></i></div>
+                    <a href="#" class="select-cart"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+                    <div class="discount-price">-10%</div>
+
+                    <div class="cart-details">
+                        <div class="likes"><i class="fa-regular fa-heart"></i></div>
+                        <div class="views"><i class="fa-solid fa-expand"></i></div>
+                        <div class="compares"><i class="fa-solid fa-code-compare"></i></div>
+                        <a href="#" class="select-carts"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <img src="/images/slide-9.jpg" class="cart-img">
+                    <img src="/images/slide-22.jpg" class="cart-img2">
+                    <a class="cart-txt">Sofa chair</a>
+                    <p class="cart-price"> $1500</p>
+                    <div class="like"><i class="fa-regular fa-heart"></i></div>
+                    <div class="view"><i class="fa-solid fa-expand"></i></div>
+                    <div class="compare"><i class="fa-solid fa-code-compare"></i></div>
+                    <a href="#" class="select-cart"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+
+                    <div class="cart-details">
+                        <div class="likes"><i class="fa-regular fa-heart"></i></div>
+                        <div class="views"><i class="fa-solid fa-expand"></i></div>
+                        <div class="compares"><i class="fa-solid fa-code-compare"></i></div>
+                        <a href="#" class="select-carts"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <img src="/images/slide-10.jpg" class="cart-img">
+                    <img src="/images/slide-17.webp" class="cart-img2">
+                    <a class="cart-txt">Product with video</a>
+                    <p class="cart-price"><span class="discount">$1520</span> $1500</p>
+                    <div class="like"><i class="fa-regular fa-heart"></i></div>
+                    <div class="view"><i class="fa-solid fa-expand"></i></div>
+                    <div class="compare"><i class="fa-solid fa-code-compare"></i></div>
+                    <a href="#" class="select-cart"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+                    <div class="discount-price">-10%</div>
+
+                    <div class="cart-details">
+                        <div class="likes"><i class="fa-regular fa-heart"></i></div>
+                        <div class="views"><i class="fa-solid fa-expand"></i></div>
+                        <div class="compares"><i class="fa-solid fa-code-compare"></i></div>
+                        <a href="#" class="select-carts"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <img src="/images/slide-11.jpg" class="cart-img">
+                    <img src="/images/slide-18.jpg" class="cart-img2">
+                    <a class="cart-txt">Variable product</a>
+                    <p class="cart-price"><span class="discount">$130</span> $100</p>
+                    <div class="like"><i class="fa-regular fa-heart"></i></div>
+                    <div class="view"><i class="fa-solid fa-expand"></i></div>
+                    <div class="compare"><i class="fa-solid fa-code-compare"></i></div>
+                    <a href="#" class="select-cart"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+                    <div class="discount-price">-20%</div>
+
+                    <div class="cart-details">
+                        <div class="likes"><i class="fa-regular fa-heart"></i></div>
+                        <div class="views"><i class="fa-solid fa-expand"></i></div>
+                        <div class="compares"><i class="fa-solid fa-code-compare"></i></div>
+                        <a href="#" class="select-carts"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <img src="/images/slide-12.jpg" class="cart-img">
+                    <img src="/images/slide-24.jpg" class="cart-img2">
+                    <a class="cart-txt">Soldout Product</a>
+                    <p class="cart-price"> $1500</p>
+                    <div class="like"><i class="fa-regular fa-heart"></i></div>
+                    <div class="view"><i class="fa-solid fa-expand"></i></div>
+                    <div class="compare"><i class="fa-solid fa-code-compare"></i></div>
+                    <a href="#" class="select-cart"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+
+                    <div class="cart-details">
+                        <div class="likes"><i class="fa-regular fa-heart"></i></div>
+                        <div class="views"><i class="fa-solid fa-expand"></i></div>
+                        <div class="compares"><i class="fa-solid fa-code-compare"></i></div>
+                        <a href="#" class="select-carts"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <img src="/images/slide-13.jpg" class="cart-img">
+                    <img src="/images/slide-20.jpg" class="cart-img2">
+                    <a class="cart-txt">Unique Product</a>
+                    <p class="cart-price"><span class="discount">$1520</span> $1500</p>
+                    <div class="like"><i class="fa-regular fa-heart"></i></div>
+                    <div class="view"><i class="fa-solid fa-expand"></i></div>
+                    <div class="compare"><i class="fa-solid fa-code-compare"></i></div>
+                    <a href="#" class="select-cart"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+                    <div class="discount-price">-15%</div>
+
+                    <div class="cart-details">
+                        <div class="likes"><i class="fa-regular fa-heart"></i></div>
+                        <div class="views"><i class="fa-solid fa-expand"></i></div>
+                        <div class="compares"><i class="fa-solid fa-code-compare"></i></div>
+                        <a href="#" class="select-carts"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <img src="/images/slide-14.jpg" class="cart-img">
+                    <img src="/images/slide-21.png" class="cart-img2">
+                    <a class="cart-txt">Large Products</a>
+                    <p class="cart-price"> $1500</p>
+                    <div class="like"><i class="fa-regular fa-heart"></i></div>
+                    <div class="view"><i class="fa-solid fa-expand"></i></div>
+                    <div class="compare"><i class="fa-solid fa-code-compare"></i></div>
+                    <a href="#" class="select-cart"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+
+                    <div class="cart-details">
+                        <div class="likes"><i class="fa-regular fa-heart"></i></div>
+                        <div class="views"><i class="fa-solid fa-expand"></i></div>
+                        <div class="compares"><i class="fa-solid fa-code-compare"></i></div>
+                        <a href="#" class="select-carts"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <img src="/images/slide-8.jpg" class="cart-img">
+                    <img src="/images/slide-8.jpg" class="cart-img2">
+                    <a class="cart-txt">Living Room</a>
+                    <p class="cart-price"><span class="discount">$1520</span> $1500</p>
+                    <div class="like"><i class="fa-regular fa-heart"></i></div>
+                    <div class="view"><i class="fa-solid fa-expand"></i></div>
+                    <div class="compare"><i class="fa-solid fa-code-compare"></i></div>
+                    <a href="#" class="select-cart"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+                    <div class="discount-price">-10%</div>
+
+                    <div class="cart-details">
+                        <div class="likes"><i class="fa-regular fa-heart"></i></div>
+                        <div class="views"><i class="fa-solid fa-expand"></i></div>
+                        <div class="compares"><i class="fa-solid fa-code-compare"></i></div>
+                        <a href="#" class="select-carts"><i class="fa-solid fa-cart-shopping"></i>Select Option</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- section3 end -->
+
+    <!-- section4 start -->
+    <section id="section-4" class="hidden">
+        <div class="container s4-grid mb4">
+            <div class="row1">
+                <img src="/images/slide-15.jpg" class="ri1">
+                <p class="ri1-txt">
+                    Sale Furniture For Summer
+                </p>
+                <p class="ri1-txt2">Great Discount Here</p>
+                <div class="percent-off">up to <span class="p-o">50%</span> off</div>
+            </div>
+            <div class="row2">
+                <img src="/images/slide-16.jpg" class="ri2">
+                <p class="ri2-txt">
+                    Office Chair For Best Offer
+                </p>
+                <p class="ri2-txt2">Great Discount Here</p>
+                <div class="percent-off2">up to <span class="p-o">50%</span> off</div>
+            </div>
+        </div>
+    </section>
+    <!-- section4 end -->
+
+    <!-- section5 start -->
+    <section id="section-5" class="hidden">
+        <div class="container s5-ctn pt6 pb7">
+            <h3 class="s5-head mb3">Latest News</h3>
+            <p class="s5-txt1 mb3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta dignissimos officia ipsam Lorem, ipsum dolor.</p>
+            <p class="s5-txt2">There are no articles found!</p>
+        </div>
+    </section>
+    <!-- section5 end -->
+
+    <!-- footer start -->
+     <footer id="footer" class="hidden">
+        <div class="container pt7 pb7">
+            <div class="footer-items">
+                <div class="first">
+                    <p class="fh">ABOUT US</p>
+                    <p class="ft mb2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum itaque at ut quia, necessitatibus eius. Nobis eaque doloribus hic vitae, ipsum tenetur, nemo incidunt harum est eius quo itaque totam!</p>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+                <div class="second">
+                    <p class="sh">INFORMATION</p>
+                    <ul class="s-lists">
+                        <li class="s-items">About Us</li>
+                        <li class="s-items">Manufacturers</li>
+                        <li class="s-items">Taking orders</li>
+                        <li class="s-items">Privacy & Policy</li>
+                        <li class="s-items">Terms & Conditions</li>
+                    </ul>
+                </div>
+                <div class="third">
+                    <p class="th">My ACCOUNT</p>
+                    <ul class="t-lists">
+                        <li class="t-items">Login</li>
+                        <li class="t-items">My Cart</li>
+                        <li class="t-items">Wishlist</li>
+                        <li class="t-items">Compare</li>
+                        <li class="t-items">My Account</li>
+                    </ul>
+                </div>
+                <div class="forth">
+                    <input type="email" class="f-input" id="f-input" placeholder="Enter E-mail Address">
+                    <button class="f-btn"><i class="fa-brands fa-telegram"></i>Subscribe</button>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- footer end -->
+    <footer id="footer-2">
+        <div class="container flex pt1 pb1">
+            <div class="tools">
+                <i class="fa-regular fa-heart"></i>
+                <p class="icon-txt">Wishlist</p>
+            </div>
+            <div class="tools">
+                <i class="fa-solid fa-code-compare"></i>
+                <p class="icon-txt">Compare</p>
+            </div>
+            <div class="tools">
+                <i class="fa-solid fa-house"></i>
+                <p class="icon-txt">Home</p>
+            </div>
+            <div class="tools">
+                <i class="fa-solid fa-cart-shopping"></i><div class="cart-no">0</div>
+                <p class="icon-txt">Cart</p>
+            </div>
+            <div class="tools">
+                <i class="fa-regular fa-user"></i>
+                <p class="icon-txt">Account</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
