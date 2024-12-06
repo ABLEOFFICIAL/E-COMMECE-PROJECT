@@ -132,7 +132,8 @@
     display: none;
 }
 
-.cs1:hover .arrow-right {
+.cs1:hover .arrow-right,
+.cs1:hover .arrow-left {
     display: block;
 }
 
@@ -145,6 +146,17 @@
     border-radius: 50%;
     position: absolute;
     right: 0;
+    top: 50%;
+}
+.arrow-left {
+    display: none;
+    background-color: var(--white);
+    padding: 1rem 1.3rem;
+    color: var(--dark-blue);
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
     top: 50%;
 }
 

@@ -1,21 +1,31 @@
-let homeFurn = document.getElementById('home-furn');
-let navBar = document.getElementById('nav-bar');
+//section 1 image slide
+let sliderImage = document.querySelectorAll('.slide');
+let arrowRight = document.querySelector('.arrow-right');
+let arrowLeft = document.querySelector('.arrow-left');
+let currentSlide = 0;
 
-//home- list- item
-const hli = ['Bedroom', 'Dinning', 'Living'];
-homeFurn.addEventListener('mouseover', displayHomeFurn);
-
-function displayHomeFurn(e) {
-    let homeListItem = document.createElement('ul');
-    homeListItem.classList.add('home-list-item');
-    let homeList;
-
-    homeList.forEach(list => list = hli);
-
-    //append homelist to homelistitems
-    homeListItem.appendChild(homeList);
-    navBar.appendChild(homeList);
-
-    console.log('hello');
+function reset(){
+    for(let i = 0; i < sliderImage.length; i++){
+        sliderImage[i].style.display = 'none';
+    }
 }
 
+function displayImg(){
+    reset();
+    sliderImage[currentSlide].style.display = 'flex';
+}
+
+function moveToNext(){
+    reset();
+    sliderImage[currentSlide + 1].style.display = 'flex';
+}
+function moveToPrevious(){
+    reset();
+    sliderImage[0].style.display = 'flex';
+}
+
+//add event listener to next button
+arrowRight.addEventListener('click', moveToNext);
+arrowLeft.addEventListener('click', moveToPrevious);
+
+displayImg();
