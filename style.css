@@ -71,9 +71,13 @@
 }
 
 /* section 1 */
+#section-1 {
+    z-index: -1;
+}
 .cs1 {
     background-color: var(--light-ash);
     position: relative;
+    /* z-index: -1; */
 }
 
 .cs1:before {
@@ -86,6 +90,9 @@
     width: .7rem;
     height: .7rem;
     background-color: rgb(255, 115, 0);
+}
+.cs1.active::before {
+    background-color: var(--light-ash);
 }
 .cs1:after {
     content: '';
@@ -126,6 +133,7 @@
     padding: .7rem 1.2rem;
     background-color: rgb(255, 115, 0);
     color: var(--white);
+    cursor: pointer;
 }
 
 .cs1 .second-slide {
@@ -147,6 +155,7 @@
     position: absolute;
     right: 0;
     top: 50%;
+    cursor: pointer;
 }
 .arrow-left {
     display: none;
@@ -168,6 +177,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     transition: border .5s ease-in;
 }
 

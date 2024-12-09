@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.abt-ctn {
+    background-color: var(--light-ash);
+    padding: 5rem;
+}
+
+.about-txt, .about-header {
+    text-align: center;
+}
+.home-link {
+    color: #000;
+}
+.home-link:hover {
+    color: rgb(255, 115, 0);
+}
+
+.sctn-abt-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+
+.img-l, .img-r {
+    width: 95%;
+    margin-inline: auto;
+}
+
+.sglheader {
+    font-weight: 400;
+}
+
+.sgl-txt {
+    font-size: 15px;
+}
+
+.sctn3-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
