@@ -40,25 +40,32 @@ let menu3 = document.getElementById('menu-3');
 let homeFurn = document.getElementById('home-furn');
 let officeFurn = document.getElementById('office-furn');
 let hospitalFurn = document.getElementById('hospital-furn');
-let arrowDown = document.getElementById('arrow-down');
+let arrowDown = document.querySelectorAll('#arrow-down');
 
+console.log(arrowDown);
 dropDown = () => {
     menu1.style.display = 'block';
+    arrowDown.forEach(arrow => arrow.style.rotate = '180deg');
 }
 dropDown2 = () => {
     menu2.style.display = 'block';
+    // arrowDown.style.rotate = '180deg';
 }
 dropDown3 = () => {
     menu3.style.display = 'block';
+    // arrowDown.style.rotate = '180deg';
 }
 removeDrop = () => {
     menu1.style.display = 'none';
+    // arrowDown.style.rotate = '0deg';
 }
 removeDrop2 = () => {
     menu2.style.display = 'none';
+    // arrowDown.style.rotate = '0deg';
 }
 removeDrop3 = () => {
     menu3.style.display = 'none';
+    // arrowDown.style.rotate = '0deg';
 }
 menuStay = () => {
     menu1.style.display = 'block';
@@ -91,3 +98,36 @@ menu3.addEventListener('mouseover', menuStay3);
 menu1.addEventListener('mouseout', menuleave);
 menu2.addEventListener('mouseout', menuleave2);
 menu3.addEventListener('mouseout', menuleave3);
+
+// // dropdpwn menu 2
+// let menu1 = document.getElementById('menu-1');
+// let menu2 = document.getElementById('menu-2');
+// let menu3 = document.getElementById('menu-3');
+// let homeFurn = document.getElementById('home-furn');
+// let officeFurn = document.getElementById('office-furn');
+// let hospitalFurn = document.getElementById('hospital-furn');
+// let arrowDown = document.getElementById('arrow-down');
+
+// showDropDown = () => {
+//     menu1.style.display = 'block';
+// }
+
+// homeFurn.addEventListener('mouseover', showDropDown);
+
+// drop down alert
+let search = document.getElementById('search');
+let alertSection = document.getElementById('alert-section');
+let clearAlert = document.getElementById('x-btn');
+
+displayDropDown = () => {
+    alertSection.style.display = 'block';
+}
+
+hideDropDown = () => {
+    // alertSection.classList.add('close-drop');
+    alertSection.style.display = 'none';
+    // console.log('hello')
+}
+
+search.addEventListener('click', displayDropDown);
+clearAlert.addEventListener('click', hideDropDown);

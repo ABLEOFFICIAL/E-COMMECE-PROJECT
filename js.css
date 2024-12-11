@@ -6,11 +6,12 @@
     border: none;
     border-radius: 3px;
     position: absolute;
-    z-index: 5;
+    z-index: 100;
     overflow: visible;
-    bottom: 45%;
+    top: 6%;
     right: 55.5%;
 }
+
 #menu-2 {
     display: none;
     background-color: var(--white);
@@ -21,7 +22,7 @@
     position: absolute;
     z-index: 5;
     overflow: visible;
-    bottom: 45%;
+    top: 6%;
     right: 43%;
 }
 #menu-3 {
@@ -34,7 +35,7 @@
     position: absolute;
     z-index: 5;
     overflow: visible;
-    bottom: 45%;
+    top: 6%;
     right: 30.5%;
 }
 
@@ -60,4 +61,91 @@
 #menu-2 a:hover,
 #menu-3 a:hover {
     color: rgb(255, 115, 0);
+}
+
+/* dropDown alert */
+#alert-section {
+    display: none;
+    background-color: #fff;
+    width: 100vw;
+    position: absolute;
+    z-index: 10;
+    animation: dropDown .5s ease-in;
+}
+
+.alert {
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid #ff0000; */
+    margin-inline: auto;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+}
+
+.input-alert {
+    height: 2.5rem;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 10px;
+    border-radius: 5px;
+    /* outline:1px solid rgb(255, 115, 0); */
+}
+
+.input-alert:focus { 
+    outline: 2px solid rgb(255, 115, 0);}
+
+.alert-search-icon {
+    background-color: rgb(255, 115, 0);
+    color: #fff;
+    padding: .75rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.alert-search, .x-btn {
+    text-align: center;
+}
+
+#x-btn {
+    max-width: 1rem;
+    color: rgb(255, 115, 0);
+    background-color: #fff;
+    padding: .8rem;
+    aspect-ratio: 1/1;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.close-drop {
+    display: none;
+    animation: closeDrop .5s ease-in;
+}
+
+.alert-search a {
+    color: #000;
+    text-decoration: underline;
+}
+
+@keyframes dropDown {
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes closeDrop {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-20px);
+    }
 }

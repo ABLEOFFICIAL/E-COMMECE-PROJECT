@@ -10,6 +10,19 @@
     <title>My first E-commerce webpage</title>
 </head>
 <body>
+    <!-- drop down alert start -->
+    <section id="alert-section">
+        <div class="container pt6 pb3">
+            <div class="alert">
+                <input type="text" placeholder="Enter your search keyword..." id="input-alert" class="input-alert">
+                <i class="fa-solid fa-magnifying-glass alert-search-icon"></i>
+                <p class="alert-search pt2 pb2">Popular Search: <a href="#" class="mr1">Bed</a><a href="#">Chair</a></p>
+                <div id="x-btn"><i class="fa-solid fa-x"></i></div>
+            </div>
+        </div>
+    </section>
+    <!-- drop down alert end -->
+
     <!-- header start -->
     <header id="header" class="">
         <div class="ch1">
@@ -28,7 +41,7 @@
                     <img src="/images/logo.png" class="logo">
                 </div>
                 <div class="main-header-r">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass" id="search"></i>
                     <i class="fa-solid fa-gear pl1 ml1"></i>
                     <i class="fa-regular fa-user ml3 pl2"></i>
                     <i class="fa-solid fa-cart-shopping ml3 pl2"></i><div class="cart-no">0</div>
@@ -48,9 +61,9 @@
                     </div>
                     <li class="nav-links"><a href="#" id="office-furn">Office Furniture <i class="fa-solid fa-caret-down" id="arrow-down"></i></a></li>
                     <div id="menu-2">
-                        <li  class="drop-list"><a href="#">Bedroom</a></li>
-                        <li class="drop-list"><a href="#">Living</a></li>
-                        <li  class="drop-list"><a href="#">Dinning</a></li>
+                        <li  class="drop-list"><a href="#">Office Chairs</a></li>
+                        <li class="drop-list"><a href="#">Cabinets</a></li>
+                        <!-- <li  class="drop-list"><a href="#">Dinning</a></li> -->
                     </div>
                     <li class="nav-links"><a href="#" id="hospital-furn">Hospital Furniture <i class="fa-solid fa-caret-down" id="arrow-down"></i></a></li>
                     <div id="menu-3">

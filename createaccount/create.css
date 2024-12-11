@@ -1,0 +1,77 @@
+.create-acct-box {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.2);
+    width: 95%;
+    max-width: 450px;
+    margin-inline: auto;
+}
+
+.f-name, .l-name {
+    width: 50%;
+}
+#f-name, #l-name {
+    width: 90%;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.names {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.create-acct-box input {
+    height: 2.3rem;
+    padding: 1rem;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.2) ;
+    border-radius: 4px;
+    width: 95%;
+}
+
+input[type='checkbox']{
+    width: .7rem;
+    cursor: pointer;
+    height: auto;
+    color: rgb(255, 115, 0);
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+.conditions {
+    display: inline;
+    font-weight: 600;
+}
+.conditions, .terms {
+    font-size: 13px;
+    margin: .5rem 0;
+}
+
+#sign-up, #have-acct {
+    display: block;
+    width: 99%;
+    margin-inline: auto;
+    height: 2.3rem;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+#sign-up {
+    background-color: rgba(255, 115, 0, 0.5);
+    color: #fff;
+}
+#have-acct {
+    font-weight: 600;
+}
+#have-acct:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
