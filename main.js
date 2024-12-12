@@ -40,32 +40,34 @@ let menu3 = document.getElementById('menu-3');
 let homeFurn = document.getElementById('home-furn');
 let officeFurn = document.getElementById('office-furn');
 let hospitalFurn = document.getElementById('hospital-furn');
-let arrowDown = document.querySelectorAll('#arrow-down');
+let arrowDown = Array.from(document.querySelectorAll('#arrow-down'));
 
 console.log(arrowDown);
 dropDown = () => {
     menu1.style.display = 'block';
-    arrowDown.forEach(arrow => arrow.style.rotate = '180deg');
+    arrowDown[0].style.rotate = '180deg';
 }
+
 dropDown2 = () => {
     menu2.style.display = 'block';
-    // arrowDown.style.rotate = '180deg';
+    arrowDown[1].style.rotate = '180deg';
 }
 dropDown3 = () => {
     menu3.style.display = 'block';
-    // arrowDown.style.rotate = '180deg';
+    arrowDown[2].style.rotate = '180deg';
 }
 removeDrop = () => {
     menu1.style.display = 'none';
-    // arrowDown.style.rotate = '0deg';
+    arrowDown[0].style.rotate = '0deg';
+
 }
 removeDrop2 = () => {
     menu2.style.display = 'none';
-    // arrowDown.style.rotate = '0deg';
+    arrowDown[1].style.rotate = '0deg';
 }
 removeDrop3 = () => {
     menu3.style.display = 'none';
-    // arrowDown.style.rotate = '0deg';
+    arrowDown[2].style.rotate = '0deg';
 }
 menuStay = () => {
     menu1.style.display = 'block';
@@ -131,3 +133,30 @@ hideDropDown = () => {
 
 search.addEventListener('click', displayDropDown);
 clearAlert.addEventListener('click', hideDropDown);
+
+// cart alert at work
+let cartSection = document.getElementById('cart-alert-sctn');
+let cartMenu = document.getElementById('cart-menu');
+let cartX = document.getElementById('cart-x');
+
+displayCart = () => {
+    cartSection.style.display = 'block';
+    cartSection.style.animation = 'showCart .5s ease-in';
+}
+hideCart = () => {
+    cartSection.style.display = 'none';
+    cartSection.style.animation = 'closeCart .5s ease-out';
+}
+
+cartMenu.addEventListener('click', displayCart);
+cartX.addEventListener('click', hideCart);
+
+// display user drop down
+let user = document.getElementById('user');
+let userList = document.getElementById('user-list');
+
+displayUList = () => {
+    userList.classList.toggle('hidden');
+}
+
+user.addEventListener('click', displayUList);

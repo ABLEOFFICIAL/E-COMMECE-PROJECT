@@ -9,7 +9,7 @@
     z-index: 100;
     overflow: visible;
     top: 6%;
-    right: 55.5%;
+    right: 58.5%;
 }
 
 #menu-2 {
@@ -23,7 +23,7 @@
     z-index: 5;
     overflow: visible;
     top: 6%;
-    right: 43%;
+    right: 40%;
 }
 #menu-3 {
     display: none;
@@ -36,7 +36,7 @@
     z-index: 5;
     overflow: visible;
     top: 6%;
-    right: 30.5%;
+    right: 26.5%;
 }
 
 /* #menu-1:hover,
@@ -52,9 +52,15 @@
 #menu-3 a {
     color: black;
 }
+#cab {
+    border-bottom: none;
+}
 
-.drop-list {
+.drop-list:not(:nth-child(3)) {
     border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+.drop-list {
+    /* border-bottom: 1px solid rgba(0,0,0,0.5); */
     padding: .4rem;
 }
 #menu-1 a:hover,
@@ -148,4 +154,114 @@
     to{
         transform: translateY(-20px);
     }
+}
+
+/* cart-alert */
+#cart-alert-sctn {
+    display: none;
+    position: absolute;
+    /* bottom: -10px; */
+    background-color: #fff;
+    height: 100vh;
+    width: 30vw;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    overflow: hidden;
+    /* animation: showCart .5s ease-in; */
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.cart-header i {
+    color: rgb(255, 115, 0);
+}
+
+.cart-alert-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.cart-alert-body svg {
+    color: rgb(255, 115, 0);
+    padding-bottom: .5rem;
+}
+.cart-alert-txt {
+    font-weight: 600;
+}
+
+.cart-alert-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 115, 0);
+    color: #fff;
+    padding: 3px;
+}
+
+.view-price {
+    background-color: #fff;
+    color: rgba(0,0,0,0.7);
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+}
+
+@keyframes showCart {
+    from{
+        transform: translateX(20px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes closeCart {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(20px);
+    }
+}
+
+/* user profile drop down */
+#user-list {
+    position: absolute;
+    left: 38%;
+    top: 100%;
+    border: none;
+    border-radius: 4px;
+    padding: .5rem;
+    background-color: #fff;
+    z-index: 100;
+    overflow: visible;
+}
+
+#user-list a {
+    color: rgba(0,0,0,0.8);
+}
+.hidden {
+    visibility: hidden;
+}
+.user-profile:not(:nth-child(4)) {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.user-profile {
+    display: block;
+    font-size: 14px;
+    padding: 8px;
+    cursor: pointer;
+}
+#user-list a:hover {
+    color: rgb(255, 115, 0);
+
 }

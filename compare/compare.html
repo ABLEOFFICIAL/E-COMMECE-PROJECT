@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="/createaccount/create.css">
     <link rel="stylesheet" href="/about/about.css">
     <link rel="stylesheet" href="/login/login.css">
-    <title>Log in</title>
+    <link rel="stylesheet" href="/wishlist/wishlist.css">
+    <link rel="stylesheet" href="/compare/compare.css">
+    <title>Compare</title>
 </head>
 <body>
     <!-- drop down alert start -->
@@ -54,7 +56,7 @@
         <div class="ch3">
             <div class="container2 nav-bar pt2 pb2" id="nav-bar">
                 <ul class="nav-btn flex">
-                    <li class="nav-links"><a href="index.html">Home</a></li>
+                    <li class="nav-links"><a href="../index.html">Home</a></li>
                     <li class="nav-links"><a href="/about/about.html">About</a></li>
                     <li class="nav-links"><a href="#" id="home-furn">Home Furniture <i class="fa-solid fa-caret-down" id="arrow-down"></i></a></li>
                     <div id="menu-1">
@@ -85,10 +87,10 @@
         <div class="abt-ctn">
             <div class="container">
                 <h1 class="about-header pt3 pb3">
-                    LOG IN
+                    COMPARE
                 </h1>
                 <p class="about-txt">
-                    <a href="../index.html" class="home-link">HOME</a> / LOG IN
+                    <a href="../index.html" class="home-link">HOME</a> / COMPARE
                 </p>
             </div>
         </div>
@@ -96,34 +98,35 @@
     <!-- section1 end -->
 
 
-    <!-- login start -->
-     <section id="login-section" class="pt7 pb7">
+    <!-- wishlist start if nothing is added -->
+    <section id="compare-sctn">
         <div class="container">
-            <div class="log-in-card pt4 pb4 pl2 pr2">
-                <div class="email-label mb2">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="login-email">
-                </div>
-                <div class="password-label mb2">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="login-pass">
-                </div>
-                <button id="sign-in-login">SIGN IN</button>
-                <div class="create-forget">
-                    <button id="create-acct-login">CREATE ACCOUNT</button>
-                    <button id="forgot-pass-login">FORGOT PASSWORD</button>
-                </div>
+            <div class="compare-text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 24 24"><path fill="currentColor" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"/></svg>
+                <p class="compare-sec">There are no products in your compare list!</p>
             </div>
         </div>
-     </section>
-    <!-- login end -->
+    </section>
+
+    <!-- wishlist end -->
 
 
+    <!-- wishlist start if nothing is added -->
+     <secton id="add-wish-sctn">
+        <div class="container">
+            <div class="table-contain">
+                <tr class="table-hd">
+
+                </tr>
+            </div>
+        </div>
+     </secton>
+    <!-- wishlist end -->
 
 
 
         <!-- footer start -->
-        <footer id="footer" class="hidden">
+        <footer id="footer">
             <div class="container pt7 pb7">
                 <div class="footer-items">
                     <div class="first">

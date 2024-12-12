@@ -23,6 +23,28 @@
     </section>
     <!-- drop down alert end -->
 
+    <!-- cart alert start -->
+     <section id="cart-alert-sctn">
+        <div class="cart-alert-cntn pt2 pr2 pb2 pl2">
+            <div class="cart-header">
+                <h4 class="cart-hd-txt">Cart</h4>
+                <i class="fa-solid fa-x" id="cart-x"></i>
+            </div>
+            <hr>
+            <div class="cart-alert-body">
+                <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 24 24"><path fill="currentColor" d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1m-9-1a2 2 0 0 1 4 0v1h-4Zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2Z"/></svg>
+                <p class="cart-alert-txt">There are no products!
+                </p>
+            </div>
+            <div class="cart-alert-foot">
+                <p class="view-cart">View Cart</p>
+                <p class="view-price">$0.00</p>
+            </div>
+
+        </div>
+     </section>
+    <!-- cart alert end -->
+
     <!-- header start -->
     <header id="header" class="">
         <div class="ch1">
@@ -43,8 +65,22 @@
                 <div class="main-header-r">
                     <i class="fa-solid fa-magnifying-glass" id="search"></i>
                     <i class="fa-solid fa-gear pl1 ml1"></i>
-                    <i class="fa-regular fa-user ml3 pl2"></i>
-                    <i class="fa-solid fa-cart-shopping ml3 pl2"></i><div class="cart-no">0</div>
+                    <i class="fa-regular fa-user ml3 pl2" id="user"></i>
+                    <i class="fa-solid fa-cart-shopping ml3 pl2" id="cart-menu"></i><div class="cart-no">0</div>
+                    <ul id="user-list" class="hidden">
+                        <a href="/login/login.html" class="user-profile">
+                            Sign in
+                        </a>
+                        <a href="#" class="user-profile">
+                            Cart
+                        </a>
+                        <a href="/wishlist/wish.html" class="user-profile">
+                            Wishlist
+                        </a>
+                        <a href="/compare/compare.html" class="user-profile">
+                            Compare
+                        </a>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -62,7 +98,7 @@
                     <li class="nav-links"><a href="#" id="office-furn">Office Furniture <i class="fa-solid fa-caret-down" id="arrow-down"></i></a></li>
                     <div id="menu-2">
                         <li  class="drop-list"><a href="#">Office Chairs</a></li>
-                        <li class="drop-list"><a href="#">Cabinets</a></li>
+                        <li class="drop-list" id="cab"><a href="#" >Cabinets</a></li>
                         <!-- <li  class="drop-list"><a href="#">Dinning</a></li> -->
                     </div>
                     <li class="nav-links"><a href="#" id="hospital-furn">Hospital Furniture <i class="fa-solid fa-caret-down" id="arrow-down"></i></a></li>
@@ -111,7 +147,7 @@
     <!-- section1 end -->
 
     <!-- section2 start -->
-    <section id="section-2" class="hidden">
+    <section id="section-2">
         <div class="container flex pt7 pb7">
             <div class="d1">
                 <img src="/images/slide-3.jpg"class="d1-img">
@@ -139,7 +175,7 @@
     <!-- section2 end -->
 
     <!-- section3 start -->
-    <section id="section-3" class="hidden">
+    <section id="section-3">
         <div class="container mb7">
             <h3 class="s3-header mb4">Our Products</h3>
             <p class="s3-txt mb3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore optio quas corrupti, quaerat omnis.</p>
@@ -298,7 +334,7 @@
     <!-- section3 end -->
 
     <!-- section4 start -->
-    <section id="section-4" class="hidden">
+    <section id="section-4">
         <div class="container s4-grid mb4">
             <div class="row1">
                 <img src="/images/slide-15.jpg" class="ri1">
@@ -321,7 +357,7 @@
     <!-- section4 end -->
 
     <!-- section5 start -->
-    <section id="section-5" class="hidden">
+    <section id="section-5">
         <div class="container s5-ctn pt6 pb7">
             <h3 class="s5-head mb3">Latest News</h3>
             <p class="s5-txt1 mb3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta dignissimos officia ipsam Lorem, ipsum dolor.</p>
@@ -331,7 +367,7 @@
     <!-- section5 end -->
 
     <!-- footer start -->
-     <footer id="footer" class="hidden">
+     <footer id="footer">
         <div class="container pt7 pb7">
             <div class="footer-items">
                 <div class="first">

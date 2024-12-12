@@ -67,8 +67,12 @@ input[type='number']::-webkit-outer-spin-button{
 #sign-up {
     background-color: rgba(255, 115, 0, 0.5);
     color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
 }
 #have-acct {
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
     font-weight: 600;
 }
 #have-acct:hover {

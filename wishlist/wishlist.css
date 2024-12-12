@@ -1,0 +1,17 @@
+svg{
+    color: rgb(255, 115, 0);
+}
+
+.wish {
+    width: 95%;
+    max-width: 600px;
+    padding: 5rem;
+    text-align: center;
+    margin-inline: auto;
+    font-family: "Raleway", sans-serif;
+}
+
+.wish-txt {
+    font-weight: 600;
+    font-size: 20px;
+}
