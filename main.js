@@ -121,8 +121,9 @@ let search = document.getElementById('search');
 let alertSection = document.getElementById('alert-section');
 let clearAlert = document.getElementById('x-btn');
 
-displayDropDown = () => {
+displayDropDown = (e) => {
     alertSection.style.display = 'block';
+    e.stopPropagation();
 }
 
 hideDropDown = () => {
@@ -151,12 +152,45 @@ hideCart = () => {
 cartMenu.addEventListener('click', displayCart);
 cartX.addEventListener('click', hideCart);
 
+// display cart alert
+let cartBtn = document.getElementById('cart-btn');
+
+displayCartAlert = () => {
+    cartSection.style.display = 'block';
+    cartSection.style.animation = 'showCart .5s ease-in';
+}
+cartBtn.addEventListener('click', displayCartAlert);
+
 // display user drop down
 let user = document.getElementById('user');
 let userList = document.getElementById('user-list');
 
-displayUList = () => {
+displayUList = (event) => {
     userList.classList.toggle('hidden');
+    event.stopPropagation();
 }
 
 user.addEventListener('click', displayUList);
+
+// click on any part of page to remove drop down
+let allAlerts = document.querySelectorAll('.alerts');
+hideAllDisplay = (e) => {
+    if(!userList.classList.contains('hidden')){
+        userList.classList.add('hidden');
+    }
+    // else if(!alertSection.contains(e.target)){
+    //     alertSection.style.display = 'none';
+    // }else if(!e.target.contains('cart-sctn')){
+    //     cartSection.style.display = 'none';
+    // }
+
+    console.log(allAlerts)
+    allAlerts.forEach(eachAlert = (e) => {
+        if(!eachAlert.contains(e.target)){
+            allAlerts.style.display = 'none';
+        } 
+    })
+
+}
+
+document.addEventListener('click', hideAllDisplay);

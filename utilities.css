@@ -15,9 +15,6 @@ html, body {
     position: relative;
 }
 
-/* .hidden {
-    overflow-x: hidden;
-} */
  i {
     cursor: pointer;
  }
