@@ -177,19 +177,19 @@ let allAlerts = document.querySelectorAll('.alerts');
 hideAllDisplay = (e) => {
     if(!userList.classList.contains('hidden')){
         userList.classList.add('hidden');
+    }else if(!alertSection.contains(e.target)){
+        alertSection.style.display = 'none';
+    }else if(!e.target.contains('cart-sctn')){
+        // cartSection.style.display = 'none';
+        console.log('hello');
     }
-    // else if(!alertSection.contains(e.target)){
-    //     alertSection.style.display = 'none';
-    // }else if(!e.target.contains('cart-sctn')){
-    //     cartSection.style.display = 'none';
-    // }
 
-    console.log(allAlerts)
-    allAlerts.forEach(eachAlert = (e) => {
-        if(!eachAlert.contains(e.target)){
-            allAlerts.style.display = 'none';
-        } 
-    })
+    // console.log(allAlerts)
+    // allAlerts.forEach(eachAlert = (e) => {
+    //     if(!eachAlert.contains(e.target)){
+    //         allAlerts.style.display = 'none';
+    //     } 
+    // })
 
 }
 
